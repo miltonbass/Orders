@@ -31,7 +31,7 @@ namespace Orders.Backend.Controllers
             {
                 return NotFound();
             }
-            return Ok(await _context.Countries.ToListAsync());
+            return Ok(await _context.Countries.AsNoTracking().ToListAsync());
         }
 
         [HttpPost]
