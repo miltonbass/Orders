@@ -1,20 +1,21 @@
 ﻿@typeparam Titem
 
-
-@if (MyList == null)
+@if (MyList is null)
 {
-    @if(Loading == null)
+    @if (Loading is null)
     {
-        <Loading/>
+        <Loading />
+    }
+    else
     {
         @Loading
     }
 }
-else if(MyList.Count == 0)
+else if (MyList.Count == 0)
 {
-    @if(NoRecords is null)
+    @if (NoRecords is null)
     {
-        <p>No hay registros para mostrar..</p>
+        <p>No hay registros para mostrar...</p>
     }
     else
     {

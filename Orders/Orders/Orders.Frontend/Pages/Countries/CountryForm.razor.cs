@@ -15,9 +15,9 @@ namespace Orders.Frontend.Pages.Countries
             ediContext = new(Country);
         }
 
-        [EditorRequired, Parametrer] public Country Country { get; set; } = null!;
-        [EditorRequired, Parametrer] public EventCallback OnValidSubmit { get; set; }
-        [EditorRequired, Parametrer] public EventCallback ReturnAccion { get; set; }
+        [EditorRequired, Parameter] public Country Country { get; set; } = null!;
+        [EditorRequired, Parameter] public EventCallback OnValidSubmit { get; set; }
+        [EditorRequired, Parameter] public EventCallback ReturnAccion { get; set; }
         [Inject] public SweetAlertService SweetAlertService { get; set; } = null!;
         public bool FormPostedSuccessfully { get; set; }
 
